@@ -40,7 +40,7 @@ TARGET_BOOTANIMATION_SIZE := 1080x608
 $(call inherit-product, vendor/omni/config/common.mk)
 ###
 
-PRODUCT_NAME := du_z2_plus
+PRODUCT_NAME := omni_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
