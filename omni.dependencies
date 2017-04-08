@@ -1,8 +1,55 @@
 [
   {
-    "remote": "omnirom",
-    "repository": "android_kernel_zuk_z2_plus",
+    "remote": "github",
+    "repository": "pablotp/android_kernel_zuk_z2_plus",
     "target_path": "kernel/zuk/z2_plus",
+    "revision": "android-7.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_device_qcom_caf-sepolicy",
+    "target_path": "device/qcom/sepolicy",
+    "revision": "android-7.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_hardware_qcom_display-caf-msm8996",
+    "target_path": "hardware/qcom/display-caf-msm8996",
+    "revision": "android-7.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_hardware_qcom_audio-caf-msm8996",
+    "target_path": "hardware/qcom/audio-caf-msm8996",
+    "revision": "android-7.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_hardware_qcom_media-caf-msm8996",
+    "target_path": "hardware/qcom/media-caf-msm8996",
+    "revision": "android-7.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_external_libnfnetlink",
+    "target_path": "external/libnfnetlink",
+    "revision": "android-7.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_external_libnetfilter_conntrack",
+    "target_path": "external/libnetfilter_conntrack",
+    "revision": "android-7.1"
+  },
+  {
+    "repository": "android_external_ant-wireless_antradio-library",
+    "target_path": "external/ant-wireless/antradio-library",
+    "revision": "android-7.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_external_ant-wireless_ant_service",
+    "target_path": "external/ant-wireless/ant_service",
     "revision": "android-7.1"
   }
 ]
