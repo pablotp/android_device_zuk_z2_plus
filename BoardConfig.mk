@@ -63,7 +63,7 @@ ENABLE_CPUSETS := true
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=tty60,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=16M@0-0xffffffff
+BOARD_KERNEL_CMDLINE := console=tty60,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=16M@0-0xffffffff enforcing=0 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -121,18 +121,22 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # CM Hardware
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw
+#BOARD_USES_CYANOGEN_HARDWARE := true
+#BOARD_HARDWARE_CLASS += \
+#    hardware/cyanogen/cmhw
 
 # CNE and DPM
 TARGET_LDPRELOAD := libNimsWrap.so
 BOARD_USES_QCNE := true
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
+TARGET_HW_DISK_ENCRYPTION := false
+#TARGET_CRYPTFS_HW_PATH := $(BOARD_PATH)/cryptfs_hw
+TARGET_CRYPTFS_HW_PATH := device/zuk/z2_plus/cryptfs_hw
 
 # Display
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
 BOARD_USES_ADRENO := true
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_USES_C2D_COMPOSITION := true
@@ -170,6 +174,10 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
+
+# Audio/media
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864

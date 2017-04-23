@@ -39,9 +39,9 @@ printf '\n%s\n' "ifeq (\$(QCPATH),)" >> "$ANDROIDMK"
 
 endif
 
--include vendor/extra/devices.mk
-ifneq (\$(call is-qc-perf-target),true)
-EOF
+#-include vendor/extra/devices.mk
+#ifneq (\$(call is-qc-perf-target),true)
+#EOF
 
 cat << EOF >> "$ANDROIDMK"
 endif
